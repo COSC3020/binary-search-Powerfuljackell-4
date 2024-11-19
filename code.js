@@ -4,12 +4,12 @@ function binarySearch(list, element) {
     var end = list.length - 1;
     let mid;
     while (end >=start) {
-         mid =start+ Math.floor((end - start) / 2); //appears that I wrote this wrong, resulting in infinite loops in the future
+         mid =start+ Math.floor((end - start) / 2);
   
 
         if (list[mid] == element){
-            //while(list[mid-1] == list[mid]) mid--; //used to return "first" instance of the value's position
-            if(list[0] == element) mid = 0; //worked on with Aaron Krapes to find a more efficient solution
+
+            if(list[0] == element) mid = 0;
             return mid;
         }
         
